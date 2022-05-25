@@ -1,0 +1,11 @@
+.row, .col {
+    border: 1px solid black;
+}
+
+.table {
+    border: 1px solid black;
+}
+
+.table-hover {
+    cursor: pointer;
+}

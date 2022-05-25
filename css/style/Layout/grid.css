@@ -1,0 +1,14 @@
+// grid
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.row, .col {
+    border: 1px solid black;
+}
+
+// COLUMN
+.column {
+    background-color: red;
+}

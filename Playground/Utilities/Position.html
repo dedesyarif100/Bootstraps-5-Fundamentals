@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/style/Utilities/Position.css">
+    <title>Position</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <div class="container"><hr>
+        <h1>Arrange elements </h1>
+        <div class="row">
+            <div class="col">
+                <div class="elements-position-relative position-relative">
+                    <div class="elements-position-absolute position-absolute text-light text-center top-0 start-0">A</div>
+                    <div class="elements-position-absolute position-absolute text-light text-center top-0 end-0">B</div>
+                    <div class="elements-position-absolute position-absolute text-light text-center top-50 start-50">C</div>
+                    <div class="elements-position-absolute position-absolute text-light text-center bottom-50 end-50">D</div>
+                    <div class="elements-position-absolute position-absolute text-light text-center bottom-0 start-0">E</div>
+                    <div class="elements-position-absolute position-absolute text-light text-center bottom-0 end-0">F</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container"><hr>
+        <h1>Center elements </h1>
+        <div class="row">
+            <div class="col">
+                <div class="elements-position-relative position-relative">
+                    <div class="elements-position-absolute position-absolute text-light text-center top-0 start-0 translate-middle">A</div>
+                    <div class="elements-position-absolute position-absolute text-light text-center top-0 start-50 translate-middle">B</div>
+                    <div class="elements-position-absolute position-absolute text-light text-center top-0 start-100 translate-middle">C</div>
+                    <div class="elements-position-absolute position-absolute text-light text-center top-50 start-0 translate-middle">D</div>
+                    <div class="elements-position-absolute position-absolute text-light text-center top-50 start-50 translate-middle">E</div>
+                    <div class="elements-position-absolute position-absolute text-light text-center top-50 start-100 translate-middle">F</div>
+                    <div class="elements-position-absolute position-absolute text-light text-center top-100 start-0 translate-middle">G</div>
+                    <div class="elements-position-absolute position-absolute text-light text-center top-100 start-50 translate-middle">H</div>
+                    <div class="elements-position-absolute position-absolute text-light text-center top-100 start-100 translate-middle">I</div>
+                </div>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col">
+                <div class="elements-position-relative position-relative">
+                    <div class="elements-position-absolute position-absolute text-light text-center top-0 start-0">A</div>
+                    <div class="elements-position-absolute position-absolute text-light text-center top-0 start-50 translate-middle-x">B</div>
+                    <div class="elements-position-absolute position-absolute text-light text-center top-0 end-0">C</div>
+                    <div class="elements-position-absolute position-absolute text-light text-center top-50 start-0 translate-middle-y">D</div>
+                    <div class="elements-position-absolute position-absolute text-light text-center top-50 start-50 translate-middle">E</div>
+                    <div class="elements-position-absolute position-absolute text-light text-center top-50 end-0 translate-middle-y">F</div>
+                    <div class="elements-position-absolute position-absolute text-light text-center bottom-0 start-0">G</div>
+                    <div class="elements-position-absolute position-absolute text-light text-center bottom-0 start-50 translate-middle-x">H</div>
+                    <div class="elements-position-absolute position-absolute text-light text-center bottom-0 end-0">I</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container"><hr>
+        <h1>Arrange elements </h1>
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-primary position-relative">
+                    Mails 
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
+                        +99 <span class="visually-hidden">unread messages</span>
+                    </span>
+                </button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-dark position-relative">
+                    Marker 
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="position-absolute top-100 start-50 translate-middle mt-1 bi bi-caret-down-fill" fill="#212529" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-primary position-relative">
+                    Alerts 
+                    <span class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-2">
+                        <span class="visually-hidden">unread messages</span>
+                    </span>
+                </button>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col">
+                <div class="position-relative m-4">
+                    <div class="progress" style="height: 1px;">
+                        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">1</button>
+                    <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">2</button>
+                    <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill" style="width: 2rem; height:2rem;">3</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
